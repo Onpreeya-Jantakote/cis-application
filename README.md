@@ -1,5 +1,7 @@
 # 📱 CIS Application — Mobile Social Platform for CIS Students
 
+**นางสาวอรปรียา จันทะโคตร 653450107-5**
+
 CIS is a mobile social app designed for **Computer and Information Science (CIS)** students.  
 It helps members connect, share updates, and explore community activities with ease.  
 All post, member, and profile data are fetched via our REST API.
