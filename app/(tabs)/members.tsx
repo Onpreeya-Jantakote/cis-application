@@ -109,7 +109,6 @@ export default function Members() {
               {isCurrentUser && <Text style={styles.youIndicator}> (You)</Text>}
             </Text>
             <Text style={styles.memberId}>Student ID: {member.education.studentId}</Text>
-            <Text style={styles.memberYear}>Enrollment Year: {member.education.enrollmentYear}</Text>
           </View>
         </View>
       </View>
@@ -143,7 +142,7 @@ export default function Members() {
               styles.yearButtonText,
               selectedYear === year && styles.yearButtonTextActive
             ]}>
-              ปี {year}
+              Year {year}
             </Text>
           </TouchableOpacity>
         ))}
