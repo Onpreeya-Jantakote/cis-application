@@ -1,6 +1,6 @@
 # 📱 CIS Application — Mobile Social Platform for CIS Students
 
-CIS Connect is a mobile social app designed for **Computer and Information Science (CIS)** students.  
+CIS is a mobile social app designed for **Computer and Information Science (CIS)** students.  
 It helps members connect, share updates, and explore community activities with ease.  
 All post, member, and profile data are fetched via our REST API.
 
@@ -24,15 +24,13 @@ All post, member, and profile data are fetched via our REST API.
 ## 🖼️ App Preview
 
 ### 🏠 Home Screen
-<img src="https://via.placeholder.com/300x600?text=Home+Screen" width="250" />
+<img src="/assets/image-application/home.jpeg" width="250" />
 
 ### 👥 Members Screen
-<img src="https://via.placeholder.com/300x600?text=Members+Screen" width="250" />
+<img src="/assets/image-application/member.jpeg" width="250" />
 
 ### 👤 Profile Screen
-<img src="https://via.placeholder.com/300x600?text=Profile+Screen" width="250" />
-
-> *(Replace the images above with your actual screenshots in `/assets/screens/`.)*
+<img src="/assets/image-application/myprofile.jpeg" width="250" />
 
 ---
 
