@@ -55,11 +55,11 @@ export default function Members() {
         setMembers(response.data.data);
       } else {
         setMembers([]);
-        Alert.alert('ข้อมูล', 'ไม่พบข้อมูลสมาชิกในปีนี้');
+        Alert.alert('Data', 'No members found for this year.');
       }
     } catch (error: any) {
       console.error('Error loading members:', error);
-      Alert.alert('ผิดพลาด', 'ไม่สามารถโหลดข้อมูลสมาชิกได้');
+      Alert.alert('Error', 'Unable to load member data');
       setMembers([]);
     } finally {
       setLoading(false);
@@ -106,10 +106,10 @@ export default function Members() {
           <View style={styles.memberInfo}>
             <Text style={styles.memberName}>
               {member.firstname} {member.lastname}
-              {isCurrentUser && <Text style={styles.youIndicator}> (คุณ)</Text>}
+              {isCurrentUser && <Text style={styles.youIndicator}> (You)</Text>}
             </Text>
-            <Text style={styles.memberId}>รหัส: {member.education.studentId}</Text>
-            <Text style={styles.memberYear}>ปีที่เข้า: {member.education.enrollmentYear}</Text>
+            <Text style={styles.memberId}>Student ID: {member.education.studentId}</Text>
+            <Text style={styles.memberYear}>Enrollment Year: {member.education.enrollmentYear}</Text>
           </View>
         </View>
       </View>
@@ -120,8 +120,8 @@ export default function Members() {
     <View style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>สมาชิก CIS</Text>
-        <Text style={styles.headerSubtitle}>เพื่อนร่วมชั้นเรียน</Text>
+        <Text style={styles.headerTitle}>Members CIS</Text>
+        <Text style={styles.headerSubtitle}>Classmates</Text>
       </View>
 
       {/* Year Filter */}
@@ -154,7 +154,7 @@ export default function Members() {
         <MaterialCommunityIcons name="magnify" size={20} color="#64748b" style={styles.searchIcon} />
         <TextInput
           style={styles.searchInput}
-          placeholder="ค้นหาด้วยชื่อหรือรหัสนักศึกษา..."
+          placeholder="Search by name or student ID..."
           value={searchQuery}
           onChangeText={setSearchQuery}
         />
@@ -164,19 +164,19 @@ export default function Members() {
       <View style={styles.statsContainer}>
         <View style={styles.statItem}>
           <Text style={styles.statNumber}>{filteredMembers.length}</Text>
-          <Text style={styles.statLabel}>ทั้งหมด</Text>
+          <Text style={styles.statLabel}>Total</Text>
         </View>
         <View style={styles.statItem}>
           <Text style={styles.statNumber}>
             {filteredMembers.filter(m => m._id === currentUser?._id).length}
           </Text>
-          <Text style={styles.statLabel}>คุณ</Text>
+          <Text style={styles.statLabel}>You</Text>
         </View>
         <View style={styles.statItem}>
           <Text style={styles.statNumber}>
             {filteredMembers.filter(m => m._id !== currentUser?._id).length}
           </Text>
-          <Text style={styles.statLabel}>เพื่อน</Text>
+          <Text style={styles.statLabel}>Friends</Text>
         </View>
       </View>
 
@@ -184,7 +184,7 @@ export default function Members() {
       {loading ? (
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#1e40af" />
-          <Text style={styles.loadingText}>กำลังโหลดข้อมูล...</Text>
+          <Text style={styles.loadingText}>Loading data...</Text>
         </View>
       ) : (
         <ScrollView 
@@ -197,7 +197,7 @@ export default function Members() {
             <View style={styles.emptyState}>
               <MaterialCommunityIcons name="account-group-outline" size={64} color="#94a3b8" />
               <Text style={styles.emptyTitle}>
-                {searchQuery ? 'ไม่พบสมาชิกที่ค้นหา' : 'ไม่พบสมาชิกในปีนี้'}
+                {searchQuery ? 'No members found' : 'No members found for this year'}
               </Text>
             </View>
           )}
