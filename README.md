@@ -27,9 +27,9 @@ All post, member, and profile data are fetched via our REST API.
 
 <table>
 <tr>
-<td><img src="/assets/image-application/home.jpeg" width="200" /><br>Home</td>
-<td><img src="/assets/image-application/ready-to-post.jpeg" width="200" /><br>Ready to Post</td>
-<td><img src="/assets/image-application/comment.jpeg" width="200" /><br>Comment</td>
+<td><img src="/assets/image-application/home.jpeg" width="200" /></td>
+<td><img src="/assets/image-application/ready-to-post.jpeg" width="200" /></td>
+<td><img src="/assets/image-application/comment.jpeg" width="200" /></td>
 </tr>
 </table>
 
