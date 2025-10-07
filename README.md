@@ -25,6 +25,8 @@ All post, member, and profile data are fetched via our REST API.
 
 ### 🏠 Home Screen
 <img src="/assets/image-application/home.jpeg" width="250" />
+<img src="/assets/image-application/ready-to-post.jpeg" width="250" />
+<img src="/assets/image-application/comment.jpeg" width="250" />
 
 ### 👥 Members Screen
 <img src="/assets/image-application/member.jpeg" width="250" />
