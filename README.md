@@ -8,14 +8,14 @@ All post, member, and profile data are fetched via our REST API.
 
 ## ✨ Features
 
-| Feature | Description |
-|----------|-------------|
-| 🏠 **Home Feed** | Browse recent posts and updates from other members, fetched via API. |
-| 👥 **Members** | Discover and connect with fellow CIS members through API data. |
-| 👤 **Profile** | View and edit your personal profile via API requests. |
-| ❤️ **Like System** | Like and unlike posts in real time (API-backed). |
-| 💬 **Comments** | Engage in discussions below posts, saved through API. |
-| 🔐 **Authentication** | Secure login and token-based authentication using API. |
+| Feature               | Description                                                          |
+| --------------------- | -------------------------------------------------------------------- |
+| 🏠 **Home Feed**      | Browse recent posts and updates from other members, fetched via API. |
+| 👥 **Members**        | Discover and connect with fellow CIS members through API data.       |
+| 👤 **Profile**        | View and edit your personal profile via API requests.                |
+| ❤️ **Like System**    | Like and unlike posts in real time (API-backed).                     |
+| 💬 **Comments**       | Engage in discussions below posts, saved through API.                |
+| 🔐 **Authentication** | Secure login and token-based authentication using API.               |
 
 > **API Base URL:** `https://cis.kku.ac.th/api/classroom`
 
@@ -24,14 +24,21 @@ All post, member, and profile data are fetched via our REST API.
 ## 🖼️ App Preview
 
 ### 🏠 Home Screen
-<img src="/assets/image-application/home.jpeg" width="250" />
-<img src="/assets/image-application/ready-to-post.jpeg" width="250" />
-<img src="/assets/image-application/comment.jpeg" width="250" />
+
+<table>
+<tr>
+<td><img src="/assets/image-application/home.jpeg" width="200" /><br>Home</td>
+<td><img src="/assets/image-application/ready-to-post.jpeg" width="200" /><br>Ready to Post</td>
+<td><img src="/assets/image-application/comment.jpeg" width="200" /><br>Comment</td>
+</tr>
+</table>
 
 ### 👥 Members Screen
+
 <img src="/assets/image-application/member.jpeg" width="250" />
 
 ### 👤 Profile Screen
+
 <img src="/assets/image-application/myprofile.jpeg" width="250" />
 
 ---
@@ -58,3 +65,4 @@ npm install
 
 # Run the app
 npm start
+```
